@@ -16,13 +16,23 @@
 
         <ul class="nav navbar-nav navbar-right">
           {{#if currentUser}}
-            <li><a href="{{ pathFor 'AddStuff' }}">Add Stuff</a></li>
-            <li><a href="{{ pathFor 'ListStuff' }}">List Stuff</a></li>
+            <li>
+                <a href="#">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            Classes
+                        <b class="caret"></b>
+                        </a>
+                        <div class="dropdown-menu">
+                            <li><a href="#">Add Class</a></li>
+                        <li><a href="#">View Classes</a></li>
+                        </div>
+                    </li>
+                </a>
+            </li>
           {{/if}}
-          <li><a href="#" class="navbar-link">{{> loginButtons }}</a></li>
-
+            <li><a href="#" class="navbar-link">{{> loginButtons }}</a></li>
         </ul>
-
       </ul>
     </div>
   </nav>

@@ -6,7 +6,7 @@
 
 Router.configure({
   layoutTemplate: 'Layout',
-  waitOn: function() { return Meteor.subscribe("Stuff"); },
+  waitOn: function() { return Meteor.subscribe("Classes"); },
   loadingTemplate: 'Loading'
 });
 
@@ -15,15 +15,19 @@ Router.route('/', {
 });
 
 Router.route('/list', {
-  name: 'ListStuff'
+  name: 'ListClasses'
 });
 
 Router.route('/add', {
-  name: 'AddStuff'
+  name: 'AddClasses'
 });
 
 
-Router.route('/stuff/:_id', {
-  name: 'EditStuff',
-  data: function() { return Stuff.findOne(this.params._id); }
+Router.route('/classes/:_id', {
+  name: 'EditClasses',
+  data: function() { return Classes.findOne(this.params._id); }
+});
+
+Router.route('/about', {
+  name: 'About'
 });
