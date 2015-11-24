@@ -26,3 +26,5 @@ accounts-password
 underscore
 ejson
 check
+tsega:bootstrap3-datetimepicker@=3.1.3_3
+aldeed:autoform-bs-datetimepicker

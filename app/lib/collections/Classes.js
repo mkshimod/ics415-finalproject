@@ -37,23 +37,46 @@ if (Meteor.isServer) {
  * See: https://github.com/aldeed/meteor-autoform#affieldinput
  */
 Classes.attachSchema(new SimpleSchema({
-  name: {
-    label: "Name",
+  className: {
+    label: "Course name",
     type: String,
     optional: false,
-    max: 20,
+    max: 10,
     autoform: {
       group: classes,
-      placeholder: "Bicycle"
+      placeholder: "EE 160"
     }
   },
-  quantity: {
-    label: "Quantity",
-    type: Number,
+  professor: {
+    label: "Professor",
+    type: String,
+    optional: false,
+    max: 15,
+    autoform: {
+      group: classes,
+      placeholder: "T. Dobry"
+    }
+  },
+  startTime: {
+    label: "Start time",
+    type: Date,
     optional: false,
     autoform: {
       group: classes,
-      placeholder: "3"
+      afFieldInput: {
+        type: "time"
+      }
+    }
+  },
+  endTime: {
+    label: "End time",
+    type: Date,
+    optional: false,
+    autoform: {
+      group: classes,
+      afFieldInput: {
+        type: "time"
+      }
     }
   }
 }));
