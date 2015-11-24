@@ -1,10 +1,10 @@
 /**
- * A list of Class to pre-fill the Collection.
+ * A list of Classes to pre-fill the Collection.
  * @type {*[]}
  */
 var classesSeeds = [
-  {name: "Basket", quantity: 3},
-  {name: "Bicycle", quantity: 2}
+  /*{courseName: "EE 160", professor: "T. Dobry", startTime: "10:30",endTime: "11:20" },*/
+  /*{name: "Bicycle", quantity: 2}*/
 ];
 
 /**

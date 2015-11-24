@@ -59,7 +59,7 @@ Classes.attachSchema(new SimpleSchema({
   },
   startTime: {
     label: "Start time",
-    type: Date,
+    type: String,
     optional: false,
     autoform: {
       group: classes,
@@ -70,7 +70,7 @@ Classes.attachSchema(new SimpleSchema({
   },
   endTime: {
     label: "End time",
-    type: Date,
+    type: String,
     optional: false,
     autoform: {
       group: classes,

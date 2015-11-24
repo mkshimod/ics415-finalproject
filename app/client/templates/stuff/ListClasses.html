@@ -5,17 +5,19 @@
       <table class="table">
         <thead>
         <tr>
-          <th>Name</th>
-          <th>Quantity</th>
-          <th>Edit</th>
+          <th>Course</th>
+          <th>Professor</th>
+          <th>Time</th>
+            <th>Edit</th>
         </tr>
         </thead>
 
         <tbody>
-        {{#each stuffList}}
+        {{#each classesList}}
           <tr>
-            <td>{{name}}</td>
-            <td>{{quantity}}</td>
+            <td>{{className}}</td>
+            <td>{{professor}}</td>
+              <td> {{startTime}} - {{endTime}}</td>
             <td><a href="{{pathFor 'EditClasses'}}">Edit</a></td>
           </tr>
         {{/each}}

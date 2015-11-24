@@ -3,7 +3,7 @@ Template.ListClasses.helpers({
   /**
    * @returns {*} All of the Classes documents.
    */
-  stuffList: function () {
+  classesList: function () {
     return Classes.find();
   }
 });
