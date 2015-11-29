@@ -7,3 +7,12 @@ Template.ListClasses.helpers({
     return Classes.find();
   }
 });
+
+Template.ListClasses.events({
+
+  "click .delete":function(e) {
+    e.preventDefault();
+    Meteor.call("deleteClasses", this._id);
+    Router.go('ListClasses');
+  }
+});

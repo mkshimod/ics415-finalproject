@@ -9,6 +9,7 @@
           <th>Professor</th>
           <th>Time</th>
             <th>Edit</th>
+            <th>Delete</th>
         </tr>
         </thead>
 
@@ -19,6 +20,7 @@
             <td>{{professor}}</td>
               <td> {{startTime}} - {{endTime}}</td>
             <td><a href="{{pathFor 'EditClasses'}}">Edit</a></td>
+              <td><button class="delete" href="#">&times;</button></td>
           </tr>
         {{/each}}
         </tbody>

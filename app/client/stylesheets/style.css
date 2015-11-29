@@ -1,3 +1,15 @@
 body {
   padding-top: 70px;  /* Move body of page below navbar. */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.headertext {
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+  font-size: 48px;
+}
+
+.icons {
+  font-size: 32px;
+  text-align: center;
 }

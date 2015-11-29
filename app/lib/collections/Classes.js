@@ -20,6 +20,10 @@ Meteor.methods({
   editClasses: function(doc, docID) {
     check(doc, Classes.simpleSchema());
     Classes.update({_id: docID}, doc);
+  },
+
+  deleteClasses: function(docID) {
+    Classes.remove(docID);
   }
 });
 

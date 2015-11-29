@@ -9,12 +9,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{pathFor 'Home'}}">meteor-application-template</a>
+        <a class="navbar-brand" href="{{pathFor 'Home'}}">Class Scheduler</a>
       </div>
 
       <ul class="collapse navbar-collapse" id="main-nav">
 
         <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{ pathFor 'Home' }}">Home</a> </li>
+            <li><a href="{{ pathFor 'About' }}">About</a></li>
           {{#if currentUser}}
             <li>
                 <a href="#">
