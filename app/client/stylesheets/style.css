@@ -1,5 +1,4 @@
 body {
-  padding-top: 70px;  /* Move body of page below navbar. */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -12,4 +11,30 @@ body {
 .icons {
   font-size: 32px;
   text-align: center;
+  color: #003D6D;
+}
+
+.header-image {
+  background-image: url('/images/calendar-cover.jpg');
+  background-size:cover;
+  height: 240px;
+  background-position: bottom;
+}
+
+.navbar {
+  border-radius: 0px;
+  background-color: #A00032;
+  border-color: #A00032;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #F7F7F5;
+}
+
+.navbar a.dropdown-toggle {
+  color: #F7F7F5;
+}
+
+.nav .navbar-brand .navbar-right {
+  color: #F7F7F5;
 }
