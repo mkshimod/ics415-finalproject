@@ -3,9 +3,10 @@ body {
 }
 
 .headertext {
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Righteous', cursive;
   text-align: center;
   font-size: 48px;
+  color: #EA3828;
 }
 
 .icons {
@@ -15,7 +16,7 @@ body {
 }
 
 .header-image {
-  background-image: url('/images/calendar-cover.jpg');
+  background-image: url('/images/calendar-pages.jpg');
   background-size:cover;
   height: 240px;
   background-position: bottom;
@@ -23,8 +24,8 @@ body {
 
 .navbar {
   border-radius: 0px;
-  background-color: #A00032;
-  border-color: #A00032;
+  background-color: #EA3828;
+  border-color: #EA3828;
 }
 
 .navbar-inverse .navbar-brand {
@@ -37,4 +38,13 @@ body {
 
 .nav .navbar-brand .navbar-right {
   color: #F7F7F5;
+}
+
+a {
+  color: #EA3828;
+}
+
+.btn-primary {
+  background-color: #EA3828;
+  border-color: #EA3828;
 }

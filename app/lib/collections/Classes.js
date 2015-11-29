@@ -61,6 +61,25 @@ Classes.attachSchema(new SimpleSchema({
       placeholder: "T. Dobry"
     }
   },
+  days: {
+    label: "Days",
+    type: [String],
+    optional: true,
+    autoform: {
+      group: classes,
+      type: "select-checkbox",
+      options: function () {
+        return [
+          {label: "Monday", value: 'M'},
+          {label: "Tuesday", value: 'T'},
+          {label: "Wednesday", value: 'W'},
+          {label: "Thursday", value: 'R'},
+          {label: "Friday", value: 'F'}
+        ];
+      }
+    }
+  },
+
   startTime: {
     label: "Start time",
     type: String,

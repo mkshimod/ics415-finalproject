@@ -1,12 +1,12 @@
 <template name="ListClasses">
   {{#IfLoggedIn}}
     <div class="well">
-
       <table class="table">
         <thead>
         <tr>
           <th>Course</th>
           <th>Professor</th>
+            <th>Days</th>
           <th>Time</th>
             <th>Edit</th>
             <th>Delete</th>
@@ -18,9 +18,21 @@
           <tr>
             <td>{{className}}</td>
             <td>{{professor}}</td>
+              <td>{{days}}</td>
               <td> {{startTime}} - {{endTime}}</td>
-            <td><a href="{{pathFor 'EditClasses'}}">Edit</a></td>
-              <td><button class="delete" href="#">&times;</button></td>
+            <td>
+                <a href="{{ pathFor "EditClasses"}}">
+                    <button class="btn btn-danger">
+                    <i class="fa fa-pencil fa-fw"></i>
+                    </button>
+                </a>
+            </td>
+              <td>
+                  <a class="delete">
+                  <button class="btn btn-danger" href="#">
+                      <i class="fa fa-trash-o fa-lg"></i></button>
+                      </a>
+              </td>
           </tr>
         {{/each}}
         </tbody>
