@@ -1,0 +1,37 @@
+<template name="HowTo">
+<div>
+    <h1>How to use this application:</h1>
+    <div>
+        <h3>Accounts</h3>
+        <p>
+            You must have an account in order to add, remove, edit, and view classes.  Guests are automatically logged in as a default user, but are not allowed to build a database of courses.
+        </p>
+        <h3><a href="{{ pathFor 'AddClasses' }}">Adding a class</a></h3>
+        <p>
+        You will be prompted to input information about your course. Please be sure to include the following:
+            <ul>
+        <li>
+            Course name
+        </li>
+        <li>
+            Professor who teaches the course
+        </li>
+        <li>
+            Days the course occurs on
+        </li>
+        <li>
+            Start and end time of the course (be sure to indicate AM/PM!)
+        </li>
+    </ul>
+        </p>
+        <h3><a href="{{ pathFor 'ListCourses' }}">Viewing your classes</a></h3>
+        <p>
+            On this page, you can view the classes that you've input to the database. You also have the option to edit the course, or delete the course.
+        </p>
+        <h3><a href="https://www.sis.hawaii.edu/uhdad/avail.classes?i=MAN" target="_blank">Course Listings</a></h3>
+        <p>
+            Clicking this link will take you to the official listing of courses by UH Manoa.
+        </p>
+    </div>
+</div>
+</template>

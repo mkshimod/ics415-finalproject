@@ -31,3 +31,7 @@ Router.route('/classes/:_id', {
 Router.route('/about', {
   name: 'About'
 });
+
+Router.route('/howto', {
+  name: 'HowTo'
+});
